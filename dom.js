@@ -18,20 +18,21 @@
 
 // Get Element by ClassName
 
-// var items = document.getElementsByClassName('list-group-item');
-// console.log(items);
-// console.log(items[1]);
-// items[1].textContent = 'Hello Pretty';
-// items[1].style.fontWeight = 'bold';
-// items[1].style.backgroundColor = 'yellow';
+var items = document.getElementsByClassName('list-group-item');
+console.log(items);
+console.log(items[1]);
+items[1].textContent = 'Hello Pretty';
 
-// for(var i=0; i<items.length; i++){
-//     items[i].style.backgroundColor='skyBlue';
-// }
+items[2].style.backgroundColor = 'green';
+
+for(var i=0; i<items.length; i++){
+    items[i].style.fontWeight = 'bold';
+}
 
 var item = document.getElementById('main-header');
 item.innerText='La La La La La';
 item.style.border ='2px solid black';
 
-document.getElementById('add').style.color='green';
-document.getElementById('add').style.fontWeight='bold';
+var items = document.getElementById('main-header');
+
+console.log(document.getElementById('hello').textContent);
