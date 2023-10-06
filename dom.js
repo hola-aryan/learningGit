@@ -37,10 +37,24 @@
 
 // console.log(document.getElementById('hello').textContent);
 
-var listItems= document.getElementsByTagName('li');
-console.log(listItems);
-for(var i = 0; i<listItems.length; i++){
-    if(i===4)
-        listItems[i].style.backgroundColor = 'skyblue';
+// var listItems= document.getElementsByTagName('li');
+// console.log(listItems);
+// for(var i = 0; i<listItems.length; i++){
+//     if(i===4)
+//         listItems[i].style.backgroundColor = 'skyblue';
     
+// }
+
+var secondItems = document.querySelector('li:nth-child(2)');
+secondItems.style.color = 'blue' ;
+
+var thirdItems = document.querySelector('li:nth-child(3)');
+thirdItems.style.display = 'none' ;
+
+var liItems = document.querySelectorAll('li');
+liItems[1].style.color = 'green';
+
+var oddItems = document.querySelectorAll('li:nth-child(odd)');
+for(var i =0; i<oddItems.length; i++){
+    oddItems[i].style.backgroundColor = 'green';
 }
